@@ -1,6 +1,6 @@
 def merge():
     while True:
-        user_input = input("Enter two lists of numbers separated by a space (e.g., 1,2,4,6 2,5,7,1) or type 'exit' to quit: ")
+        user_input = input("Enter two lists of numbers separated by a space or type 'exit' to quit: ")
         
         if user_input.lower() == "exit":
             print("Goodbye!")
