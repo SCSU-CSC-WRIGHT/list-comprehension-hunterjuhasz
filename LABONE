@@ -1,0 +1,28 @@
+def grade_calculator():
+    print("Please enter your test scores, separated by spaces.")
+    scores = input("Scores: ").split()
+    
+    # Convert scores to floats
+    scores = [float(score) for score in scores]
+    
+    # Calculate average score
+    average_score = sum(scores) / len(scores)
+    
+    # Determine letter grade
+    if 90 <= average_score <= 100:
+        grade = 'A'
+    elif 80 <= average_score < 90:
+        grade = 'B'
+    elif 70 <= average_score < 80:
+        grade = 'C'
+    elif 60 <= average_score < 70:
+        grade = 'D'
+    else:
+        grade = 'F'
+    
+    # Print results
+    print(f"\nYour average score is: {average_score:.2f}")
+    print(f"Your letter grade is: {grade}\n")
+
+# Run the function
+grade_calculator()
