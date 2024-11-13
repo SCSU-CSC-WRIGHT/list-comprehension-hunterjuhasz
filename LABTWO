@@ -1,0 +1,25 @@
+def count_even_odd():
+    # input
+    print("Enter multiple integers separated by spaces:")
+    numbers = input().split()
+    
+    # list
+    numbers = [int(num) for num in numbers]
+    
+    # start of count
+    even_count = 0
+    odd_count = 0
+    
+    # Number loop
+    for num in numbers:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    
+    # Print 
+    print(f"Count of even numbers: {even_count}")
+    print(f"Count of odd numbers: {odd_count}")
+
+#run
+count_even_odd()
