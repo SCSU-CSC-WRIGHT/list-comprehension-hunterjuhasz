@@ -1,0 +1,22 @@
+def merge():
+    while True:
+        user_input = input("Enter two lists of numbers separated by a space (e.g., 1,2,4,6 2,5,7,1) or type 'exit' to quit: ")
+        
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        list1_str, list2_str = user_input.split()
+        list1 = [int(num) for num in list1_str.split(",")]
+        list2 = [int(num) for num in list2_str.split(",")]
+        
+        combined_list = list1 + list2
+        unique_list = []
+        
+        for num in combined_list:
+            if num not in unique_list:
+                unique_list.append(num)
+        
+        print("Merged list without duplicates:", unique_list)
+
+merge()
